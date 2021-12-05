@@ -1,0 +1,22 @@
+#source = [10, 20, 30, 40, 50, 60]
+def shiftleft(s,k):
+    size=len(s)
+    for count in range(k):
+        for i in range (1,size):
+            s[i-1]=s[i]
+        s[size-1]=0
+
+source1 = [10, 20, 30, 40, 50, 60]
+shiftleft(source1,3)
+print(source1)
+def shifteight(s,k):
+    size=len(s)
+    for count in range(k):
+        for i in range(size-2,-1,-1):
+            s[i+1]=s[i]
+        s[0]=0
+
+source2 = [10, 20, 30, 40, 50, 60]
+shifteight(source2,3)
+print(source2)
+def remove(s,size,idx):
